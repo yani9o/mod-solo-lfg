@@ -17,14 +17,22 @@ SoloLFG.Enable = 1
 #        Default:     1  - (Enabled)
 #                     0  - (Disabled)
 
-SoloLFG.Announce = 1
+SoloLFG.Announce = 0
+
+#    SoloLFG.AchievementCheck
+#        Description: If someone in the group has to have the dungeon achievement (only if <5 players)
+#        Default:     1  - (Enabled)
+#                     0  - (Disabled)
+
+
+SoloLFG.CriteriaCheck = 1
 
 #    SoloLFG.FixedXP
 #        Description: Set the XP rate in dungeons to FixedXPRate
 #        Default:     1  - (Enabled)
 #                     0  - (Disabled)
 
-SoloLFG.FixedXP = 1
+SoloLFG.FixedXP = 0
 
 #    SoloLFG.FixedXPRate
 #        Description: Set the fixed XP rate used in dungeons
@@ -33,3 +41,76 @@ SoloLFG.FixedXP = 1
 SoloLFG.FixedXPRate = 0.2
 
 ###################################################################################################
+
+########################################################
+# Solo LFG Achievement Requirements - WotLK / AzerothCore
+# Format:
+# SoloLFG.DungeonCriteria.<DungeonID> = <CriteriaID>:<BossName (Instance)>
+########################################################
+
+# ======= Klassische 5-Mann Dungeons =======
+SoloLFG.DungeonCriteria.4   = 525:Taragaman der Hungerleider (Flammenschlund)
+SoloLFG.DungeonCriteria.1   = 526:Mutanus der Verschlinger (Höhlen des Wehklagens)
+SoloLFG.DungeonCriteria.6   = 524:Edwin van Cleef (Todesminen)
+SoloLFG.DungeonCriteria.8   = 527:Erzmagier Arugal (Burg Schattenfang)
+SoloLFG.DungeonCriteria.10  = 528:Aku'mai (Tiefschwarze Grotte)
+SoloLFG.DungeonCriteria.12  = 529:Bazil Thredd (Verlies von Sturmwind)
+SoloLFG.DungeonCriteria.14  = 530:Robogenieur Thermadraht (Gnomeregan)
+SoloLFG.DungeonCriteria.16  = 531:Charlga Klingenflanke (Kral der Klingenhauer)
+SoloLFG.DungeonCriteria.18  = 537:Blutmagier Thalnos (Scharlachrotes Kloster - Friedhof)
+SoloLFG.DungeonCriteria.165 = 535:Arkanist Doan (Scharlachrotes Kloster - Bibliothek)
+SoloLFG.DungeonCriteria.163 = 536:Herod (Scharlachrotes Kloster - Waffenkammer)
+SoloLFG.DungeonCriteria.164 = 533:Hochinquisitorin Weißsträhne (Scharlachrotes Kloster Kathedrale)
+SoloLFG.DungeonCriteria.20  = 532:Amnennar der Kältebringer (Hügel der Klingenhauer)
+SoloLFG.DungeonCriteria.22  = 538:Archaedas (Uldaman)
+SoloLFG.DungeonCriteria.2   = 549:Dunkelmeister Gandling (Scholomance)
+SoloLFG.DungeonCriteria.24  = 539:Häuptling Ukorz Sandskalp (Zul'Farrak)
+SoloLFG.DungeonCriteria.26  = 540:Prinzessin Theradras (Maraudon - Orangefarbene Kristalle)
+SoloLFG.DungeonCriteria.272 = 540:Prinzessin Theradras (Maraudon - Purpurfarbene Kristalle)
+SoloLFG.DungeonCriteria.273 = 540:Prinzessin Theradras (Maraudon - Klare Wasser)
+SoloLFG.DungeonCriteria.28  = 541:Eranikus' Schemen (Versunkener Tempel)
+SoloLFG.DungeonCriteria.30  = 542:Imperator Dagran Thaurissan (Schwarzfelstiefen - Unteres Viertel)
+SoloLFG.DungeonCriteria.276 = 542:Imperator Dagran Thaurissan (Schwarzfelstiefen - Oberes Viertel)
+SoloLFG.DungeonCriteria.32  = 544:Oberanführer Wyrmthalak (Untere Schwarzfelsspitze)
+SoloLFG.DungeonCriteria.44  = 4439:General Drakkisath (Obere Schwarzfelsspitze)
+SoloLFG.DungeonCriteria.34  = 545:Alzzin der Wildformer (Düsterbruch - Ost)
+SoloLFG.DungeonCriteria.36  = 546:Immol'thar (Düsterbruch - West)
+SoloLFG.DungeonCriteria.38  = 547:König Gordok (Düsterbruch - Nord)
+SoloLFG.DungeonCriteria.40  = 550:Balnazzar (Stratholme - Haupteingang)
+SoloLFG.DungeonCriteria.274 = 551:Baron Totenschwur (Stratholme - Dienstboteneingang)
+
+# ======= Burning Crusade 5-Mann Dungeons =======
+SoloLFG.DungeonCriteria.136 = 552:Omor der Narbenlose (Höllenfeuerbollwerk)
+SoloLFG.DungeonCriteria.137 = 555:Keli'dan der Zerstörer (Blutkessel)
+SoloLFG.DungeonCriteria.138 = 564:Kriegshäuptling Kargath Messerfaust (Zerschmetterte Hallen)
+SoloLFG.DungeonCriteria.140 = 556:Quagmirran (Sklavenunterkünfte)
+SoloLFG.DungeonCriteria.146 = 557:Die Schattenmutter (Der Tiefensumpf)
+SoloLFG.DungeonCriteria.147 = 563:Kriegsherr Kalithresh (Die Dampfkammer)
+SoloLFG.DungeonCriteria.148 = 558:Nexusprinz Shaffar (Managruft)
+SoloLFG.DungeonCriteria.149 = 573:Exarch Maladaar (Auchenaikrypta)
+SoloLFG.DungeonCriteria.150 = 560:Klauenkönig Ikiss (Sethekkhallen)
+SoloLFG.DungeonCriteria.151 = 561:Murmur (Schattenlabyrinth)
+SoloLFG.DungeonCriteria.170 = 559:Epochenjäger (Vorgebirge des Alten Hügellands)
+SoloLFG.DungeonCriteria.171 = 562:Aeonus (Der Schwarze Morast)
+SoloLFG.DungeonCriteria.172 = 565:Pathaleon der Kalkulator (Die Mechanar)
+SoloLFG.DungeonCriteria.173 = 566:Warpzweig (Die Botanika)
+SoloLFG.DungeonCriteria.174 = 567:Herold Horizontiss (Die Arkatraz)
+SoloLFG.DungeonCriteria.198 = 568:Kael'thas Sonnenwanderer (Terrasse der Magister)
+
+# ======= WotLK 5-Mann Dungeons =======
+SoloLFG.DungeonCriteria.225 = 198:Keristrasza (Der Nexus)
+SoloLFG.DungeonCriteria.202 = 192:Ingvar der Brandschatzer (Burg Utgarde)
+SoloLFG.DungeonCriteria.204 = 2043:Anub'arak (Azjol-Nerub)
+SoloLFG.DungeonCriteria.218 = 3581:Herold Volazj (Ahn'kahet: Das Alte Königreich)
+SoloLFG.DungeonCriteria.214 = 9098:Der Prophet Tharon'ja (Feste Drak'Tharon)
+SoloLFG.DungeonCriteria.220 = 3582:Cyanigosa (Die Violette Festung)
+SoloLFG.DungeonCriteria.216 = 3577:Gal'darah (Gundrak)
+SoloLFG.DungeonCriteria.208 = 217:Sjonnir den Eisenformer (Hallen des Steins)
+SoloLFG.DungeonCriteria.203 = 210:König Ymiron (Turm Utgarde)
+SoloLFG.DungeonCriteria.207 = 1827:Loken (Hallen der Blitze)
+SoloLFG.DungeonCriteria.206 = 206:Leywächter Eregos (Das Oculus)
+SoloLFG.DungeonCriteria.209 = 6381:Mal'Ganis (Ausmerzung von Stratholme)
+SoloLFG.DungeonCriteria.251 = 12739:Verschlinger der Seelen (Die Seelenschmiede)
+SoloLFG.DungeonCriteria.253 = 12744:Geißelfürst Tyrannus (Grube von Saron)
+SoloLFG.DungeonCriteria.255 = 12743:Der Lichkönig (Hallen der Reflexion)
+SoloLFG.DungeonCriteria.245 = 12309:Der Schwarze Ritter (Prüfung des Champions),11561:Der Schwarze Ritter (Prüfung des Champions)
